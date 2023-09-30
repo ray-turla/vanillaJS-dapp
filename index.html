@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      display: grid;
+      gap: 1rem;
+      justify-items: start;
+      margin-bottom: 1rem;
+    }
+
+    form .control-group {
+      display: grid;
+      gap: 0.5rem;
+      justify-items: start;
+    }
+
+    .btn-wallet {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Dapp</h1>
+  <h2>Connection Status: <span class="text-status"></span></h2>
+  <form class="form-dapp">
+    <div class="control-group">
+      <label for="title">Title: </label>
+      <input type="text" name="title" id="title"/>
+    </div>
+    <button>Submit</button>
+  </form>
+  <button class="btn-wallet">Connect Wallet</button>
+  <section class="post-container">Posts is Empty</section>
+  <script src="_bundle.js"></script>
+</body>
+</html>
